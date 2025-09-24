@@ -330,6 +330,71 @@
                 border-right: none;
             }
         }
+        
+        /* Footer Styles */
+        .footer {
+            background: #4CAF50;
+            color: white;
+            padding: 40px 0 20px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-section h4 {
+            color: white;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+        
+        .footer-section p, .footer-section li {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 8px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .footer {
+                padding: 30px 0 15px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -638,6 +703,52 @@
         });
     });
 </script>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AC to DC Calculator</h4>
+                <p>Professional electrical conversion tool for engineers, technicians, and students worldwide.</p>
+                <p>Get accurate AC to DC power calculations with our free online calculator.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Features</h4>
+                <ul>
+                    <li>Instant AC to DC conversion</li>
+                    <li>Accurate electrical formulas</li>
+                    <li>Mobile-friendly design</li>
+                    <li>No registration required</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li>Conversion formulas</li>
+                    <li>Power factor calculations</li>
+                    <li>Electrical engineering guides</li>
+                    <li>Professional standards</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 AC to DC Calculator. All rights reserved. | Free electrical conversion tool.</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
