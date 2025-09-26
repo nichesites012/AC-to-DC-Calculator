@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ac-to-dc-calculator.vercel.app/sitemap_index.xml
